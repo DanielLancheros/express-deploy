@@ -15,6 +15,6 @@ app.get("/test", (req,res) => {
 
 app.get("/candy", getAllCandy);
 app.post("/candy", addNewCandy);
-app.patch("/candy/:candyID", updateCandyById);
+app.patch("/candy/:candyId", updateCandyById);
 
 export const api = onRequest(app);
